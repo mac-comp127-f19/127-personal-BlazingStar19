@@ -20,7 +20,11 @@ public class UppercaseFirstLetter {
 
 
     public static String uppercaseFirstLetter(String input) {
-    String output = input.substring(0,1).toUpperCase()+input.substring(1);
+        String output = input;
+        if(input == "")
+            output = "";
+        else
+            output = input.substring(0,1).toUpperCase()+input.substring(1);
 
         return output;
     }
